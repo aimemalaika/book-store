@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Header from '../../components/header';
 
 class Categories extends Component {
   constructor() {
@@ -10,8 +9,7 @@ class Categories extends Component {
   render() {
     return (
       <>
-        <Header />
-        <h1>Books Categories</h1>
+        <h1>Under construction</h1>
       </>
     );
   }

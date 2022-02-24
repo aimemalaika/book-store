@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import BookForm from '../../components/bookForm';
+import BookList from '../../components/bookList';
 import Header from '../../components/header';
 
 class Books extends Component {
@@ -11,7 +13,8 @@ class Books extends Component {
     return (
       <>
         <Header />
-        <h1>Books List</h1>
+        <BookList />
+        <BookForm />
       </>
     );
   }
