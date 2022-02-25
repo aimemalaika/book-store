@@ -15,8 +15,6 @@ const BookForm = () => {
       category,
     };
     dispatch(addBook(newBook));
-    setTitle('');
-    setCategory('');
   };
 
   const setCategoryState = (e) => {
