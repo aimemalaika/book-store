@@ -6,7 +6,7 @@ import store from './redux/configureStore';
 import Books from './Ui/books';
 import Categories from './Ui/categories';
 import './style.css';
-
+/* eslint-disable react/jsx-key */
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
