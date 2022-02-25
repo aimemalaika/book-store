@@ -1,18 +1,7 @@
-import React, { Component } from 'react';
-
-class Categories extends Component {
-  constructor() {
-    super();
-    this.state = {};
+const categoryReducer = (state = [], action) => {
+  switch (action.type) {
+    default: return state;
   }
+};
 
-  render() {
-    return (
-      <>
-        <h1>Under construction</h1>
-      </>
-    );
-  }
-}
-
-export default Categories;
+export default categoryReducer;
