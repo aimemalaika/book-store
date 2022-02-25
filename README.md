@@ -1,7 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # LEADBOARD APP
 > This project will lay foundations for your Bookstore website. You will create a React and Redux app. You will structure your files using the "feature folder" approach. You will also set up routing using React Router.
-
+![image](./src/image/ScreenShot.png)
 ## Live Preview
 > [Web App Link](https://aime-book-store.netlify.app/)
 ## Built With
