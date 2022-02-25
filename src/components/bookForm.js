@@ -6,21 +6,32 @@ import { addBook } from '../redux/books/books';
 const BookForm = () => {
   const dispatch = useDispatch();
   const [title, setTitle] = useState('');
-  const [author, setAuthor] = useState('');
+  const [category, setCategory] = useState('');
   const submitBookToStore = () => {
     const id = uuidv4();
     const newBook = {
       id,
       title,
-      author,
+      category,
     };
     dispatch(addBook(newBook));
+    setTitle('');
+    setCategory('');
+  };
+
+  const setCategoryState = (e) => {
+    setCategory(e);
   };
 
   return (
     <form className="books-form">
       <input onChange={(e) => setTitle(e.target.value)} type="text" placeholder="enter book name" />
-      <input onChange={(e) => setAuthor(e.target.value)} type="text" placeholder="enter book author" />
+      <select onChange={(e) => setCategoryState(e.target.value)}>
+        <option value="">Select</option>
+        <option value="sci-fi">sci-fi</option>
+        <option value="romance">romance</option>
+        <option value="action">action</option>
+      </select>
       <button onClick={submitBookToStore} type="button">Add</button>
     </form>
   );

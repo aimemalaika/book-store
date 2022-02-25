@@ -36,7 +36,8 @@ body {
 }
 
 .books-form input,
-.books-form button {
+.books-form button,
+.books-form select {
   margin-bottom: 10px;
   margin-left: 30px;
 }
