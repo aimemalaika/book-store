@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+/* eslint-disable react/jsx-key */
 class Categories extends Component {
   constructor() {
     super();
@@ -8,9 +8,9 @@ class Categories extends Component {
 
   render() {
     return (
-      <>
+      <div>
         <h1>Under construction</h1>
-      </>
+      </div>
     );
   }
 }
