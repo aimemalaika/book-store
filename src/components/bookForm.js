@@ -22,16 +22,19 @@ const BookForm = () => {
   };
 
   return (
-    <form className="books-form">
-      <input onChange={(e) => setTitle(e.target.value)} type="text" placeholder="enter book name" />
-      <select onChange={(e) => setCategoryState(e.target.value)}>
-        <option value="">Select</option>
-        <option value="sci-fi">sci-fi</option>
-        <option value="romance">romance</option>
-        <option value="action">action</option>
-      </select>
-      <button onClick={submitBookToStore} type="button">Add</button>
-    </form>
+    <div className="form">
+      <h3>ADD NEW BOOK</h3>
+      <form className="book-form">
+        <input onChange={(e) => setTitle(e.target.value)} type="text" placeholder="enter book name" />
+        <select className="select" onChange={(e) => setCategoryState(e.target.value)}>
+          <option value="">Select</option>
+          <option value="sci-fi">sci-fi</option>
+          <option value="romance">romance</option>
+          <option value="action">action</option>
+        </select>
+        <button className="bg-blue add-button" onClick={submitBookToStore} type="button">Add</button>
+      </form>
+    </div>
   );
 };
 
