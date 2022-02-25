@@ -1,18 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Books from './redux/books/books';
-import Categories from './redux/categories/categories';
+import store from './redux/configureStore';
+import Books from './Ui/books';
+import Categories from './Ui/categories';
 import './style.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <Routes>
-        <Route path="/" exact element={<Books />} />
-        <Route path="/categories" exact element={<Categories />} />
-      </Routes>
-    </Router>
+    <Provider store={store}>
+      <Router>
+        <Routes>
+          <Route path="/" exact element={<Books />} />
+          <Route path="/categories" exact element={<Categories />} />
+        </Routes>
+      </Router>
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root'),
 );
