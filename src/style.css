@@ -20,26 +20,17 @@ ul {
   background-color: #0290ff;
 }
 
-.book-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #fafafa;
-}
-
-.navbar {
+.d-flex {
   display: flex;
 }
 
 .nav-card {
   box-shadow: 0 0 5px #e8e8e8;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .nav-content {
-  display: flex;
   position: relative;
   align-items: center;
 }
@@ -86,7 +77,6 @@ ul {
 
 .book-form {
   padding: 0 0;
-  display: flex;
 }
 
 .book-form > input {

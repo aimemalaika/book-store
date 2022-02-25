@@ -24,7 +24,7 @@ const BookForm = () => {
   return (
     <div className="form">
       <h3>ADD NEW BOOK</h3>
-      <form className="book-form">
+      <form className="book-form d-flex">
         <input onChange={(e) => setTitle(e.target.value)} type="text" placeholder="enter book name" />
         <select className="select" onChange={(e) => setCategoryState(e.target.value)}>
           <option value="">Select</option>
